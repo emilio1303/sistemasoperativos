@@ -12,6 +12,10 @@ main(int argc, char **argv)
     exit();
   }
   for(i=1; i<argc; i++)
+    if (atoi(argv[i])==1) {
+        printf(2, "No matar al init");
+    }else {
     kill(atoi(argv[i]));
+    }
   exit();
 }
